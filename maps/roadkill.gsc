@@ -59,6 +59,7 @@ main()
     precachemodel( "electronics_camera_pointandshoot_low" );
     precachemodel( "h2_rkl_cellphone_camera" );
     precachemodel( "viewbody_us_army" );
+    precachemodel( "worldbody_h1_usmc_desert" );
     precachemodel( "weapon_suburban_minigun_viewmodel" );
     precacherumble( "collapsing_building" );
     precacherumble( "tank_rumble" );
@@ -91,7 +92,6 @@ main()
     precachemodel( "h2_com_clipboard_wpaper_anim" );
     precachemodel( "h2_characters_accessories_pencil" );
 
-    precachemodel( "worldbody_h1_usmc_desert" );
     precachemodel( "viewhands_h1_usmc_desert" );
     precachemodel( "viewhands_player_usmc" );
 
@@ -1077,6 +1077,7 @@ _id_A8E2()
     }
 
     level._id_C18F = spawn( "script_origin", ( -6382.98, 8474.13, 334.0 ) );
+    //var_6 = maps\_utility::spawn_anim_model( "player_worldbody", level._id_C18F.origin, ( 0.0, 0.0, 0.0 ) );
     var_6 = maps\_utility::spawn_anim_model( "player_worldbody", level._id_C18F.origin, ( 0.0, 0.0, 0.0 ) );
     var_6 hide();
     thread thrown_out_of_latvee_cinseq( var_6 );

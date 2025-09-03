@@ -1646,7 +1646,7 @@ _id_A9A3()
     self setflaggedanim( "other_anim_flag", var_3, 1, 0, 1 );
     level thread maps\_anim::start_notetrack_wait( self, "other_anim_flag" );
     var_4 = maps\_utility::spawn_anim_model( "player_rig" );
-    var_4 setmodel( "viewhands_player_usmc" );
+    var_4 setmodel( "viewhands_player_us_army" );
     var_4 linkto( self, "tag_body", ( 0.0, 0.0, 0.0 ), ( 0.0, 0.0, 0.0 ) );
     var_4 hide();
     wait 3;

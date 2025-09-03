@@ -22,14 +22,8 @@ main()
     }
 
     self.weapon = "m4_grunt";
-    if ( level.script == "roadkill" || level.script == "trainer")
-	{
-        character\character_hero_shepherd::main();
-    }
-    else
-    {
-        character\character_hero_forest_ghost::main();
-    }
+    character\character_hero_shepherd::main();
+
 }
 
 spawner()
@@ -40,7 +34,6 @@ spawner()
 precache()
 {
     character\character_hero_shepherd::precache();
-    character\character_hero_forest_ghost::precache();
     precacheitem( "m4_grunt" );
     precacheitem( "coltanaconda" );
     precacheitem( "coltanaconda" );
