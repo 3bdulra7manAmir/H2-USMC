@@ -32,7 +32,7 @@ give_loadout()
 
     maps\_loadout_code::loadout( "favela", "masada_grenadier_acog", "m1014", "fraggrenade", "flash_grenade", "viewhands_h1_usmc_desert", "taskforce" );
 
-    maps\_loadout_code::loadout( "invasion", "masada_digital_eotech", "iw8_hdr", "fraggrenade", "smoke_grenade_american", "viewhands_h1_usmc_desert", "american" );
+    maps\_loadout_code::loadout( "invasion", "scar_h_reflex", "iw8_hdr", "fraggrenade", "smoke_grenade_american", "viewhands_h1_usmc_desert", "american" );
 
     maps\_loadout_code::loadout( "favela_escape", "ump45_acog", "glock", "fraggrenade", "flash_grenade", "viewhands_h1_usmc_desert", "taskforce" );
 
