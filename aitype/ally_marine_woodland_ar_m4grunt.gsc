@@ -23,18 +23,8 @@ main()
 
     self.weapon = "m4_grunt";
 
-    switch( codescripts\character::get_random_character(3) )
-    {
-        case 0:
-            character\character_usmc_assault::main();
-            break;
-        case 1:
-            character\character_usmc_smg::main();
-            break;
-        case 2:
-            character\character_usmc_lmg::main();
-            break;
-    }
+
+    character\character_usmc_rnd::main();
 }
 
 spawner()
@@ -44,9 +34,7 @@ spawner()
 
 precache()
 {
-    character\character_usmc_assault::precache();
-    character\character_usmc_smg::precache();
-    character\character_usmc_lmg::precache();
+    character\character_usmc_rnd::precache();
     precacheitem( "m4_grenadier" );
     precacheitem( "m4_grunt" );
     precacheitem( "usp" );

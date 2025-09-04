@@ -22,18 +22,7 @@ main()
     }
 
     self.weapon = "m14_scoped";
-    switch( codescripts\character::get_random_character(3) )
-    {
-        case 0:
-            character\character_usmc_assault::main();
-            break;
-        case 1:
-            character\character_usmc_smg::main();
-            break;
-        case 2:
-            character\character_usmc_shotgun::main();
-            break;
-    }
+    character\character_usmc_rnd::main();
 
     
 }
@@ -45,9 +34,7 @@ spawner()
 
 precache()
 {
-    character\character_usmc_assault::precache();
-    character\character_usmc_shotgun::precache();
-    character\character_usmc_smg::precache();
+    character\character_usmc_rnd::precache();
     precacheitem( "m14_scoped" );
     precacheitem( "usp_silencer" );
     precacheitem( "usp_silencer" );

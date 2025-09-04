@@ -35,8 +35,9 @@ main()
     precachemodel( "viewhands_player_usmc" );
     precacheturret( "heli_spotlight" );
     precachemodel( "weapon_m4" );
-    precachemodel( "worldbody_h1_usmc_desert_injured" );
+    precachemodel( "worldbody_h1_usmc_desert" );
     precachemodel( "head_us_army_b" );
+    precachemodel( "h2_weapon_scar_h_clip" );
     _id_BC93();
     _id_ABAD();
     _id_D2EB();
@@ -196,13 +197,13 @@ _id_B0C4()
     level._id_BBBD = maps\_utility::spawn_targetname( "friendly03Crash", 1 );
     // level._id_BBBD codescripts\character::setheadmodel( "head_us_army_b" ); //here
     //level._id_BBBD codescripts\character::setheadmodel( "head_shadow_co_c_takedown" ); //here
-    codescripts\character::setheadmodel( "head_shadow_co_c" ); //here
-    character\character_usmc_assault_dcemp::main(); //here
+    codescripts\character::setheadmodel( "head_usmc_desert_support_james" ); //here
+    character\character_usmc_rnd::main(); //here
     level._id_AC03 hide();
     level._id_C280 hide();
     level._id_BBBD hide();
-    level._id_C280.name = "Cpl. Dunn - Shadow Company"; //here
-    level._id_AC03.name = "Sgt. Foley - Shadow Company"; //here
+    level._id_C280.name = "Cpl. Dunn - USMC"; //here
+    level._id_AC03.name = "Sgt. Foley - USMC"; //here
     level._id_AC03.animname = "crash_leader";
     level._id_C280.animname = "crash_dunn";
     level._id_BBBD.animname = "crash_redshirt";
@@ -330,12 +331,12 @@ _id_BAD1()
     setsaveddvar( "actionSlotsHide", "0" );
     level.player allowcrouch( 1 );
     level.player disableoffhandweapons();
-    level.player giveweapon( "masada_digital_acog" );
-    level.player setweaponammoclip( "masada_digital_acog", 0 );
-    level.player setweaponammostock( "masada_digital_acog", 0 );
-    level.player setweaponammoclip( "m203_m4_eotech", 0 );
-    level.player setweaponammostock( "m203_m4_eotech", 0 );
-    level.player switchtoweapon( "masada_digital_acog" );
+    level.player giveweapon( "scar_h_thermal" );
+    level.player setweaponammoclip( "scar_h_thermal", 0 );
+    level.player setweaponammostock( "scar_h_thermal", 0 );
+    level.player setweaponammoclip( "h2_weapon_scar_h_clip", 0 );
+    level.player setweaponammostock( "h2_weapon_scar_h", 0 );
+    level.player switchtoweapon( "scar_h_thermal" );
     level.player enableweapons();
 
     if ( level.script == "dcemp" )
@@ -357,8 +358,8 @@ _id_BAD1()
         level.player enableoffhandweapons();
     }
 
-    level.player setweaponammoclip( "masada_digital_acog", 30 );
-    level.player setweaponammostock( "masada_digital_acog", 0 );
+    level.player setweaponammoclip( "scar_h_thermal", 30 );
+    level.player setweaponammostock( "scar_h_thermal", 0 );
     thread _id_C467();
     common_scripts\utility::flag_wait_either( "macey_wont_throw_clip_to_player", "macey_should_throw_clip_to_player" );
 
@@ -366,7 +367,7 @@ _id_BAD1()
     {
         common_scripts\utility::flag_wait( "macey_clip_to_player" );
         level.player playsound( "scn_dcemp_player_receive_ammo" );
-        level.player setweaponammostock( "masada_digital_acog", 30 );
+        level.player setweaponammostock( "scar_h_thermal", 30 );
         level.player _meth_8440();
     }
     else
@@ -389,7 +390,7 @@ _id_D4CD()
 
 _id_C467()
 {
-    while ( level.player getweaponammoclip( "masada_digital_acog" ) > 0 )
+    while ( level.player getweaponammoclip( "scar_h_thermal" ) > 0 )
         wait 0.05;
 
     common_scripts\utility::flag_set( "player_ran_out_of_first_clip" );
@@ -908,7 +909,7 @@ _id_D299( var_0 )
 _id_ABAD()
 {
     level.scr_animtree["player_rig"] = #animtree;
-    level.scr_model["player_rig"] = "worldbody_h1_usmc_desert_injured"; //here
+    level.scr_model["player_rig"] = "worldbody_h1_usmc_desert"; //here
     level.scr_anim["player_rig"]["dcburning_BHrescue"] = %h2_dcburning_bhrescue_player_wakeup;
     level.scr_anim["player_rig"]["dcburning_BHrescue_throwclip"] = %h2_dcburning_bhrescue_player_takeammo;
     maps\_anim::addnotetrack_customfunction( "player_rig", "upright", ::_id_B116, "dcburning_BHrescue" );

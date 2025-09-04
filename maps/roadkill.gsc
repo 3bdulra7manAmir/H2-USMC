@@ -59,6 +59,8 @@ main()
     precachemodel( "electronics_camera_pointandshoot_low" );
     precachemodel( "h2_rkl_cellphone_camera" );
     precachemodel( "viewbody_us_army" );
+    precachemodel( "viewhands_player_usmc" );
+    precachemodel( "viewhands_h1_usmc_desert" );
     precachemodel( "worldbody_h1_usmc_desert" );
     precachemodel( "weapon_suburban_minigun_viewmodel" );
     precacherumble( "collapsing_building" );

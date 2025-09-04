@@ -3172,12 +3172,12 @@ _id_CB40()
     thread maps\dc_crashsite::_id_B888( var_3["top_left"], var_3["bot_right"], var_4 );
     _id_D350();
     level.player takeallweapons();
-    level.player giveweapon( "masada_digital_acog" );
-    level.player switchtoweapon( "masada_digital_acog" );
-    level.player setweaponammoclip( "m203_m4_eotech", 0 );
-    level.player setweaponammostock( "m203_m4_eotech", 0 );
-    level.player setweaponammoclip( "masada_digital_acog", 0 );
-    level.player setweaponammostock( "masada_digital_acog", 0 );
+    level.player giveweapon( "scar_h_thermal" );
+    level.player switchtoweapon( "scar_h_thermal" );
+    level.player setweaponammoclip( "h2_weapon_scar_h_clip", 0 );
+    level.player setweaponammostock( "h2_weapon_scar_h_clip", 0 );
+    level.player setweaponammoclip( "scar_h_thermal", 0 );
+    level.player setweaponammostock( "scar_h_thermal", 0 );
     setsaveddvar( "ui_hidemap", 1 );
     setsaveddvar( "hud_showStance", "0" );
     setsaveddvar( "compass", "0" );

@@ -22,7 +22,7 @@ main()
     }
 
     self.weapon = "scar_h_thermal";
-    character\character_usmc_lmg::main();
+    character\character_usmc_rnd::main();
 }
 
 spawner()
@@ -32,7 +32,7 @@ spawner()
 
 precache()
 {
-    character\character_usmc_lmg::precache();
+    character\character_usmc_rnd::precache();
     precacheitem( "scar_h_thermal" );
     precacheitem( "beretta" );
     precacheitem( "fraggrenade" );

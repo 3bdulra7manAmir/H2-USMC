@@ -414,11 +414,11 @@ _id_B845()
         level.scr_anim["player_rig"]["player_getin"] = %h2_roadkill_laatpv_player_getin;
 
     level.scr_animtree["player_rig"] = #animtree;
-    level.scr_model["player_rig"] = "viewhands_player_us_army";
+    level.scr_model["player_rig"] = "viewhands_player_usmc";
     level.scr_animtree["viewbody"] = #animtree;
-    level.scr_model["viewbody"] = "viewbody_us_army";
+    level.scr_model["viewbody"] = "worldbody_h1_usmc_desert";
     level.scr_animtree["player_worldbody"] = #animtree;
-    level.scr_model["player_worldbody"] = "viewbody_us_army";
+    level.scr_model["player_worldbody"] = "worldbody_h1_usmc_desert";
     level.scr_anim["player_worldbody"]["exit_latvee"] = %h2_roadkill_thrownoutlatvee_player;
     level.scr_anim["player_worldbody"]["player_shep_intro"] = %h2_roadkill_intro_pickup_player;
     maps\_anim::addnotetrack_customfunction( "player_worldbody", "intro_plr_getup", maps\roadkill_aud::_id_BA67, "player_shep_intro" );

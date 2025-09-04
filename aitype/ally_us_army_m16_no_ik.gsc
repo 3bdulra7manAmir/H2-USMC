@@ -34,7 +34,7 @@ main()
             break;
     }
 
-    character\character_usmc_assault::main();
+    character\character_usmc_rnd::main();
 }
 
 spawner()
@@ -44,7 +44,7 @@ spawner()
 
 precache()
 {
-    character\character_usmc_assault::precache();
+    character\character_usmc_rnd::precache();
     precacheitem( "m16_basic" );
     precacheitem( "m16_acog" );
     precacheitem( "m16_grenadier" );

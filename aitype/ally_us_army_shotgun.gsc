@@ -34,7 +34,7 @@ main()
             break;
     }
 
-    character\character_usmc_shotgun::main();
+    character\character_usmc_rnd::main();
 }
 
 spawner()
@@ -44,7 +44,7 @@ spawner()
 
 precache()
 {
-    character\character_usmc_shotgun::precache();
+    character\character_usmc_rnd::precache();
     precacheitem( "m1014" );
     precacheitem( "m1014_reflex" );
     precacheitem( "m1014_eotech" );
