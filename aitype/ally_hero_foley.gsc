@@ -22,7 +22,7 @@ main()
     }
 
     self.weapon = "scar_h_grenadier";
-    character\character_usmc_rnd::main();
+    character\character_hero_foley::main();
 }
 
 spawner()
@@ -32,7 +32,7 @@ spawner()
 
 precache()
 {
-    character\character_usmc_rnd::precache();
+    character\character_hero_foley::precache();
     precacheitem( "scar_h_grenadier" );
     precacheitem( "scar_h_m203" );
     precacheitem( "beretta" );
