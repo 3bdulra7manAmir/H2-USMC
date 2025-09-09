@@ -397,6 +397,10 @@ _id_BAE3()
 
 _id_D2D3()
 {
+    // maps\_load::set_player_viewhand_model( "viewhands_h1_usmc_desert" ); //here
+    // level.scr_model["player_rig"] = "viewhands_player_usmc"; //here
+    // level.scr_model["viewbody"] = "worldbody_h1_usmc_desert"; // HERE
+
     soundscripts\_snd::snd_message( "start_barrett_checkpoint" );
     maps\dcburning_lighting::_id_CA84( "dcburning_rooftops" );
     _id_B351( "crows_nest" );
@@ -2867,6 +2871,10 @@ _id_AB32()
 
 _id_C90D()
 {
+    // maps\_load::set_player_viewhand_model( "viewhands_h1_usmc_desert" ); //here
+    // level.scr_model["player_rig"] = "viewhands_player_usmc"; //here
+    // level.scr_model["viewbody"] = "worldbody_h1_usmc_desert"; // HERE
+
     var_0 = getent( "model_barrett", "targetname" );
     level._id_D0B4 = spawn( "script_origin", var_0.origin );
     var_1 = spawn( "script_model", var_0.origin );
@@ -3875,6 +3883,10 @@ _id_BFA6()
 
 _id_B0A4()
 {
+    // maps\_load::set_player_viewhand_model( "viewhands_h1_usmc_desert" ); //here
+    // level.scr_model["player_rig"] = "viewhands_player_usmc"; //here
+    // level.scr_model["viewbody"] = "worldbody_h1_usmc_desert"; // HERE
+
     common_scripts\utility::flag_wait( "start_crow_armor_sequence" );
     var_0 = getent( "barrett_trigger", "targetname" );
     var_0.origin += ( 0.0, 0.0, -20.0 );
@@ -5404,7 +5416,7 @@ _id_D2B3()
     common_scripts\utility::flag_wait( "player_crash_done" );
     _func_31C( 7 );
     //here
-    level.player setviewmodel( "viewmodel_base_viewhands" );
+    level.player setviewmodel( "viewhands_us_army" );
 }
 
 _id_CBB0()
@@ -6912,6 +6924,10 @@ _id_B2C8()
     precachemodel( "com_widescreen_monitor_on_2_des" );
     precachemodel( "com_widescreen_monitor_on_3_des" );
     precachemodel( "h2_adrenaline_syringe_phys" );
+
+    precachemodel( "viewhands_player_usmc" );
+    precachemodel( "viewhands_h1_usmc_desert" );
+    precachemodel( "worldbody_h1_usmc_desert" );
 }
 
 _id_BB44()

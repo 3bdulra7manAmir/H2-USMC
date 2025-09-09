@@ -3,6 +3,9 @@
 
 main()
 {
+    // maps\_load::set_player_viewhand_model( "viewhands_h1_usmc_desert" ); //here
+    // level.scr_model["player_rig"] = "viewhands_player_usmc"; //here
+    // level.scr_model["viewbody"] = "worldbody_h1_usmc_desert";
     anims();
     player_anims();
     vehicle_anims();
